@@ -1,0 +1,56 @@
+<div class="cointainer">
+    <div class="row">
+        <h1>home page</h1>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+           <div class="productDes">
+            <img src="./assets/product.jpeg">
+            <h6 style="color: white;">Product Name:&nbsp;<span>DSLR Camers</span></h6>
+            <h6 style="color: white;">Product Description:&nbsp;<span>this is latest camera with all good feateures</span></h6>
+            <button *ngIf = "addToCartValue == true" class="btn btn-warning" (click) ="addToCart()">Add to Cart</button>
+            <div *ngIf = "addSubstract == true" class="plus">
+                <button class="btn btn-warning" (click) = "productPlus()">+</button>
+                <button class="btn btn-warning" (click) = "productSubstract()">-</button>
+            </div>
+           </div>
+
+           <div class="productDes">
+            <img src="./assets/product.jpeg">
+            <h6 style="color: white;">Product Name:&nbsp;<span>DSLR Camers</span></h6>
+            <h6 style="color: white;">Product Description:&nbsp;<span>this is latest camera with all good feateures</span></h6>
+            <button *ngIf = "addToCartValuetwo == true" class="btn btn-warning" (click) ="addToCartTwo()">Add to Cart</button>
+            <div *ngIf = "addSubstracttwo == true" class="plus">
+                <button class="btn btn-warning" (click) = "productPlus()">+</button>
+                <button class="btn btn-warning" (click) = "productSubstracttwo()">-</button>
+            </div>
+           </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="productDes">
+             <img src="./assets/product.jpeg">
+             <h6 style="color: white;">Product Name:&nbsp;<span>DSLR Camers</span></h6>
+             <h6 style="color: white;">Product Description:&nbsp;<span>this is latest camera with all good feateures</span></h6>
+             <button *ngIf = "addToCartValuethree == true" class="btn btn-warning" (click) ="addToCartThree()">Add to Cart</button>
+             <div *ngIf = "addSubstractthree == true" class="plus">
+                <button class="btn btn-warning" (click) = "productPlus()">+</button>
+                <button class="btn btn-warning" (click) = "productSubstractthree()">-</button>
+            </div>
+            </div>
+ 
+            <div class="productDes">
+             <img src="./assets/product.jpeg">
+             <h6 style="color: white;">Product Name:&nbsp;<span>DSLR Camers</span></h6>
+             <h6 style="color: white;">Product Description:&nbsp;<span>this is latest camera with all good feateures</span></h6>
+             <button *ngIf = "addToCartValuefour == true" class="btn btn-warning" (click) ="addToCartFour()">Add to Cart</button>
+             <div *ngIf = "addSubstractfour == true" class="plus">
+                <button class="btn btn-warning" (click) = "productPlus()">+</button>
+                <button class="btn btn-warning" (click) = "productSubstractfour()">-</button>
+            </div>
+            </div>
+         </div>
+
+         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <button class="btn btn-warning">Cart&nbsp; &nbsp;<span>{{cartNumber}}</span></button>
+         </div>
+    </div>
+</div>

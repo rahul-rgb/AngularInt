@@ -1,0 +1,10 @@
+.productDes{
+    background-color: black;
+    height: 300px;
+    width: 275px;
+}
+.plus{
+    /* background-color: white;
+    width: 15px; */
+    display: inline-block;
+}

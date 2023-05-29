@@ -1,0 +1,37 @@
+<div class="cointainer">
+    <div class="row">
+        <h1>Login Form Demo</h1>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-12">
+        <form [formGroup] = "loginForm" (ngSubmit) = "onSubmit($event)">
+          <div>
+            <label>Email</label>
+            <input type="text" name="email" formControlName = "email" class="form-control"
+            placeholder="please enter your email" [ngClass] = "{'is-invalid': submitted && form.email.errors}">
+            <div *ngIf = "submitted && form.email.errors" class="invalid-feedback">
+              <div *ngIf = "submitted && form.email.errors.required && !form.email.errors.cannotContainSpace">
+                *please enter your email
+              </div>
+              <div *ngIf = "form.email.errors.cannotContainSpace">
+                *please enter your email
+              </div>
+            </div>
+          </div>
+  
+          <div>
+            <label>Password</label>
+            <input type="text" name="pass" formControlName = "pass" class="form-control"
+            placeholder="please enter your Password" [ngClass] = "{'is-invalid': submitted && form.pass.errors}">
+            <div *ngIf = "submitted && form.pass.errors" class="invalid-feedback">
+              <div *ngIf = "submitted && form.pass.errors.required && !form.pass.errors.cannotContainSpace">
+                *please enter your Password
+              </div>
+              <div *ngIf = "form.pass.errors.cannotContainSpace">
+                *please enter your Password
+              </div>
+            </div>
+          </div>
+          <button name="submit" class="btn btn-danger mt-3">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
